@@ -468,6 +468,7 @@ footer>.dados_footer {
     align-items: baseline;
     justify-content: space-evenly;
     height: 22vw;
+    padding: 1vw 0 0 0;
     background-color: #3C4852;
     color: #B8C0C7;
     font-family: "Poppins", sans-serif;
