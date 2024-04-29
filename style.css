@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navigator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 9vh;
+    background-color: rgba(116, 125, 255, 0.35);
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.h1_header_home {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-size: 2.2vw;
+    padding-left: 4.5vw;
+}
+
+.links_navigator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 51vw;
+}
+
+
+.links_navigator>li {
+    list-style-type: none;
+}
+
+.links_navigator>li>a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.3vw;
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    position: absolute;
+    top: 0px;
+    z-index: 0;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 70vh;
+    background-image: url(img/FundoHome/bd21a5afe631241f3744bf69c6a2923d.png);
+    background-size: 100vw 70vh;
+    background-repeat: no-repeat;
+}
+
+.h1_home>h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.0vw;
+    color: white;
+    text-shadow: 0px 2px 2px black;
+}
+
+.viagem {
+    font-family: "Poppins", sans-serif;
+    color: rgba(118, 127, 134, 1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 18vh;
+    background-color: rgba(116, 125, 255, 0.35);
+    position: absolute;
+    margin-top: 52vh;
+}
+
+.viagem>.dados_viagem {
+    background-color: #F9F9F9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 12vh;
+    border-radius: 8px 8px 8px 8px;
+
+}
+
+.viagem>.dados_viagem>div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 88vw;
+}
+
+.viagem>.dados_viagem>div>.span1,
+.span2,
+.span3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.viagem>.dados_viagem>div>.span1,
+.span2,
+.span3>span {
+    font-size: 1.25vw;
+}
+
+.viagem>.dados_viagem>div>.span1>input {
+    background-color: #FFFFFF;
+    height: 3.8vh;
+    width: 28vw;
+    border: 1px solid #B8C0C7;
+    border-radius: 8px;
+
+}
+
+.viagem>.dados_viagem>div>.span2>input {
+    background-color: white;
+    height: 3.8vh;
+    width: 20vw;
+    border: 1px solid #B8C0C7;
+    border-radius: 8px;
+}
+
+.viagem>.dados_viagem>div>.span2>input[type="date"] {
+    padding-left: 15px;
+    padding-right: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2vw;
+    font-weight: 400;
+    color: rgba(118, 127, 134, 1);
+
+}
+
+.viagem>.dados_viagem>div>.span3>input {
+    background-color: white;
+    height: 3.8vh;
+    width: 20vw;
+    border: 1px solid #B8C0C7;
+    border-radius: 8px;
+}
+
+.viagem>.dados_viagem>div>.span3>input[type="date"] {
+    padding-left: 15px;
+    padding-right: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2vw;
+    font-weight: 400;
+    color: rgba(118, 127, 134, 1);
+
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: grayscale(100%) invert(46.25%);
+}
+
+.viagem>.dados_viagem>div>button {
+    background-color: rgba(255, 173, 50, 1);
+    border-style: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1.2vw;
+    color: white;
+    height: 3.8vh;
+    width: 13vw;
+    border-radius: 5px;
+}
+
+.viagem>.dados_viagem>div>span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 20.8px;
+}
+
+.passeios {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 8vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-bottom: 5vw;
+}
+
+.passeios>.detalhes {
+    margin: 1.1vw;
+    width: 40vw;
+}
+
+.passeios>.detalhes>.h1_detalhes {
+    font-family: "Lobster", sans-serif;
+    font-size: 2vw;
+    font-weight: 400;
+    color: rgba(116, 125, 255, 1);
+}
+
+.passeios>.detalhes>.linha_detalhes {
+    display: block;
+    background-color: rgba(255, 173, 50, 1);
+    width: 20vw;
+    height: 8px;
+    border-radius: 8px;
+    margin-top: 1vw;
+    margin-bottom: 0.8vw;
+}
+
+.passeios>.detalhes>.descricao_detalhes {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2vw;
+    font-weight: 400;
+    color: rgba(60, 72, 82, 1);
+}
+
+.passeios>.fotos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.passeios>.fotos>img {
+    margin: 0.4vw;
+    width: 17vw;
+    height: 17vw;
+    border: 10px solid white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.passeios>.detalhes>.butao_detalhes {
+    background-color: rgba(255, 173, 50, 1);
+    border: 1px solid rgba(255, 173, 50, 1);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1.2vw;
+    color: white;
+    height: 5vh;
+    width: 13vw;
+    border-radius: 5px;
+    margin-top: 1.2vw;
+}
+
+.viagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    height: 90vw;
+    width: 100vw;
+    background: linear-gradient(27.5deg, rgba(255, 231, 194, 1) 0%, rgba(189, 172, 255, 1) 100%);
+}
+
+.viagens>.titulo {
+    font-family: "Lobster", sans-serif;
+    font-size: 2vw;
+    color: #747DFF;
+    font-weight: 400;
+}
+
+.viagens>.opcoes_viagens {
+    display: grid;
+    width: 90vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.viagens>.opcoes_viagens>div {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 10px solid white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    height: 32vw;
+    margin: 2vw;
+}
+
+.viagens>.opcoes_viagens>div>img {
+    width: 25vw;
+    height: 23vw;
+}
+
+.viagens>.opcoes_viagens>div>.textos_valores {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 9vw;
+    padding-right: .6vw;
+    padding-left: .6vw;
+}
+
+.viagens>.opcoes_viagens>div>.textos_valores>.local {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 23vw;
+    color: #3C4852;
+}
+
+.viagens>.opcoes_viagens>div>.textos_valores>.local>h4 {
+    font-size: 1.4vw;
+    font-weight: 700;
+}
+
+.viagens>.opcoes_viagens>div>.textos_valores>.local>span {
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.viagens>.opcoes_viagens>div>.textos_valores>p {
+    font-size: 0.8vw;
+    color: #3C4852;
+}
+
+.viagens>.opcoes_viagens>div>.textos_valores>.valor_butao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.viagens>.opcoes_viagens>div>.textos_valores>.valor_butao>.valor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 12vw;
+}
+
+.viagens>.opcoes_viagens>div>.textos_valores>.valor_butao>.valor>h3 {
+    color: #3C4852;
+    font-size: 1.2vw;
+}
+
+.viagens>.opcoes_viagens>div>.textos_valores>.valor_butao>.valor>p {
+    color: #767F86;
+    font-size: 0.7vw;
+    text-decoration: line-through;
+}
+
+.viagens>.opcoes_viagens>div>.textos_valores>.valor_butao>button {
+    background-color: rgba(255, 173, 50, 1);
+    border: 1px solid rgba(255, 173, 50, 1);
+    font-weight: 700;
+    font-size: .9vw;
+    color: white;
+    height: 3.4vh;
+    width: 8vw;
+    border-radius: 5px;
+}
+
+.avaliacao {
+    
+}
