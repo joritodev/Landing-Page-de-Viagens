@@ -10,17 +10,21 @@ Atividades a serem desenvolvidas
 - Propor as melhores práticas de arquitetura para os projetos
 - Garantir que a aplicação funcione em diferentes navegadores
 - Garantir a fluidez do aplicativo durante a sua utilização
+  
 Requisitos
 - Conhecimento em desenvolvimento utilizando HTML5 e CSS3
 - Conhecimento em Tags Semânticas
 - Conhecimento em CSS Grid e CSS Flexbox
 - Conhecimento em Responsividade e Media Queries
 - Conhecimento em Controle de Versão com Git/GitHub
+  
 Desejável
 - Conhecimento em Figma
+  
 Escolaridade
 - Cursando Análise e Desenvolvimento de Sistemas, Ciências da Computação e/ou
 áreas afins.
+
 Benefícios
 - Salário acima da média
 - Vale-Refeição/Alimentação
@@ -28,6 +32,7 @@ Benefícios
 - Gympass
 - Day off
 - Auxílio Educação
+  
 Para concorrer, complete a Avaliação e faça a Entrega conforme orientações a seguir.
 
 Avaliação
