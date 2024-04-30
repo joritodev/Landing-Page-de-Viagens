@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Puritan:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "@phosphor-icons/web/regular";
+
 
 * {
     margin: 0;
@@ -52,12 +54,15 @@ body {
     color: white;
 }
 
+.navigator>nav>.links_navigator>li>a:hover {
+    color: rgba(255, 173, 50, 1);
+}
+
 main {
     position: relative;
     top: 0px;
     z-index: 0;
     min-height: 100vh;
-    ;
 }
 
 .home {
@@ -127,7 +132,7 @@ main {
 
 .viagem>.dados_viagem>div>.span1>input {
     background-color: #FFFFFF;
-    height: 3.8vh;
+    height: 2.5vw;
     width: 28vw;
     border: 1px solid #B8C0C7;
     border-radius: 8px;
@@ -136,7 +141,7 @@ main {
 
 .viagem>.dados_viagem>div>.span2>input {
     background-color: white;
-    height: 3.8vh;
+    height: 2.5vw;
     width: 20vw;
     border: 1px solid #B8C0C7;
     border-radius: 8px;
@@ -154,7 +159,7 @@ main {
 
 .viagem>.dados_viagem>div>.span3>input {
     background-color: white;
-    height: 3.8vh;
+    height: 2.5vw;
     width: 20vw;
     border: 1px solid #B8C0C7;
     border-radius: 8px;
@@ -177,14 +182,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .viagem>.dados_viagem>div>button {
     background-color: rgba(255, 173, 50, 1);
-    border-style: none;
+    border: none;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 1.2vw;
     color: white;
-    height: 3.8vh;
+    height: 2.5vw;
     width: 13vw;
-    border-radius: 5px;
+    border-radius: 0.3vw;
+}
+
+.viagem>.dados_viagem>div>button:hover {
+    background-color: #747DFF;
 }
 
 .viagem>.dados_viagem>div>span {
@@ -220,7 +229,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: block;
     background-color: rgba(255, 173, 50, 1);
     width: 20vw;
-    height: 8px;
+    height: 0.4vw;
     border-radius: 8px;
     margin-top: 1vw;
     margin-bottom: 0.8vw;
@@ -243,9 +252,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin: 0.4vw;
     width: 17vw;
     height: 17vw;
-    border: 10px solid white;
-    border-radius: 8px;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border: 0.8vw solid white;
+    border-radius: 0.5vw;
+    box-shadow: 0px 0.2vw 0.2vw rgba(0, 0, 0, 0.25);
 }
 
 .passeios>.detalhes>.butao_detalhes {
@@ -255,10 +264,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-weight: 700;
     font-size: 1.2vw;
     color: white;
-    height: 5vh;
+    height: 3vw;
     width: 13vw;
-    border-radius: 5px;
+    border-radius: 0.4vw;
     margin-top: 1.2vw;
+}
+
+.passeios>.detalhes>.butao_detalhes:hover {
+    background-color: #747DFF;
+    border: 1px solid #747DFF;;
 }
 
 .viagens {
@@ -291,9 +305,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: flex;
     flex-direction: column;
     background-color: white;
-    border: 10px solid white;
+    border: 0.8vw solid white;
     border-radius: 0.4vw;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0.2vw 0.2vw rgba(0, 0, 0, 0.5);
     height: 32vw;
     margin: 2vw;
 }
@@ -372,9 +386,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-weight: 700;
     font-size: .9vw;
     color: white;
-    height: 3.4vh;
+    height: 2.5vw;
     width: 8vw;
     border-radius: 5px;
+}
+
+.viagens>.opcoes_viagens>div>.textos_valores>.valor_butao>button:hover {
+    background-color: #747DFF;
+    border: 1px solid #747DFF;;
 }
 
 .avaliacao {
@@ -527,13 +546,13 @@ footer>.dados_footer>.newsletter_redes {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 15vw;
+    height: 14vw;
 }
 
 footer>.dados_footer>.newsletter_redes>.newsletter {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 5vw;
 }
 
@@ -547,6 +566,7 @@ footer>.dados_footer>.newsletter_redes>.newsletter>.input_button>#newsletter_ema
     height: 2vw;
     width: 20vw;
     border: 1px solid #FFFFFF;
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.25);
 }
 
 footer>.dados_footer>.newsletter_redes>.newsletter>.input_button>#newsletter_email::placeholder {
@@ -566,11 +586,17 @@ footer>.dados_footer>.newsletter_redes>.newsletter>.input_button>button {
     height: 2.1vw;
     width: 5vw;
     border-radius: .25vw;
+    margin-left: .7vw;
 }
+
+footer>.dados_footer>.newsletter_redes>.newsletter>.input_button>button:hover {
+    background-color: #747DFF;
+    border: 1px solid #747DFF;
+} 
 
 footer>.dados_footer>.newsletter_redes>.linha_footer {
     display: block;
-    background-color: #B8C0C7;
+    background-color: #b8c0c7;
     width: 20vw;
     height: 0.041vw;
     border-radius: 8px;
@@ -582,22 +608,30 @@ footer>.dados_footer>.newsletter_redes>.redes {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 7vw;
+    height: 6vw;
 }
 
 footer>.dados_footer>.newsletter_redes>.redes>.img_redes {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 12vw;
+    width: 11vw;
+
 }
 
-footer>.dados_footer>.newsletter_redes>.redes>.img_redes>a>img {
-    width: 3vw;
-    border-radius: 50%;
-    border: 0.2vw solid rgb(205, 205, 205);
+footer>.dados_footer>.newsletter_redes>.redes>.img_redes>a{
+    text-decoration: none;
+    size: 10vw
+}
+
+footer>.dados_footer>.newsletter_redes>.redes>.img_redes>a>.ph {
+    font-size: 3vw;
+    color: rgb(184, 192, 199);
     cursor: pointer;
-    filter: invert(28%) brightness(115%) contrast(100%)
+}
+
+footer>.dados_footer>.newsletter_redes>.redes>.img_redes>a>i:hover {
+    color: rgba(255, 173, 50, 1);
 }
 
 footer>.fundo_roxo {
