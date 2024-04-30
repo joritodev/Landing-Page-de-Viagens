@@ -190,6 +190,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     height: 2.5vw;
     width: 13vw;
     border-radius: 0.3vw;
+    cursor: pointer;
 }
 
 .viagem>.dados_viagem>div>button:hover {
@@ -268,6 +269,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 13vw;
     border-radius: 0.4vw;
     margin-top: 1.2vw;
+    cursor: pointer;
 }
 
 .passeios>.detalhes>.butao_detalhes:hover {
@@ -389,6 +391,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     height: 2.5vw;
     width: 8vw;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .viagens>.opcoes_viagens>div>.textos_valores>.valor_butao>button:hover {
@@ -446,6 +449,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-weight: 700;
     font-size: 1.8vw;
     margin-bottom: 5vw;
+    cursor: pointer;
 }
 
 .avaliacao>.autor_avaliacao>div>img {
@@ -587,6 +591,7 @@ footer>.dados_footer>.newsletter_redes>.newsletter>.input_button>button {
     width: 5vw;
     border-radius: .25vw;
     margin-left: .7vw;
+    cursor: pointer;
 }
 
 footer>.dados_footer>.newsletter_redes>.newsletter>.input_button>button:hover {
